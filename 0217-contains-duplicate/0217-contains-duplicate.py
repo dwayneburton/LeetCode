@@ -6,7 +6,5 @@ class Solution(object):
         """
         mapping = {}
         for num in nums:
-            if mapping.get(num):
-                return True
             mapping[num] = True
-        return False
+        return len(mapping) < len(nums)
